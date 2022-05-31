@@ -3,7 +3,6 @@
 #define INCLUDE_BST_H_
 template <typename T>
 class BST {
-          private:
  private:
   struct Node {
     T value;
@@ -50,13 +49,11 @@ class BST {
     sleva = heightTree(root->left);
     sprava = heightTree(root->right);
     if (sleva > sprava) {
-      return sleva + 1;
+      return sleva + 2;
     } else {
-      return sprava + 1;
+      return sprava + 2;
     }
   }
-
-         public:
  public:
   BST() : root(nullptr) {}
   void add(const T& val) {
