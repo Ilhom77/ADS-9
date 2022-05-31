@@ -49,9 +49,9 @@ class BST {
     sleva = heightTree(root->left);
     sprava = heightTree(root->right);
     if (sleva > sprava) {
-      return sleva + 2;
+      return sleva + 1;
     } else {
-      return sprava + 2;
+      return sprava + 1;
     }
   }
  public:
